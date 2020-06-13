@@ -1,0 +1,6 @@
+﻿CREATE TABLE [dbo].[Mission]
+(
+	[Id] INT NOT NULL PRIMARY KEY IDENTITY, 
+    [Title] NVARCHAR(50) NOT NULL, 
+    [SceneName] NVARCHAR(200) NOT NULL
+)
