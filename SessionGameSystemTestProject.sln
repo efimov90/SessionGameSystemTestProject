@@ -7,6 +7,10 @@ Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "MSSQLDatabase", "MSSQLDatab
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Platformer", "Platformer\Platformer.csproj", "{564DE25D-78DB-4462-A83A-1F665E0B7E06}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SGSApi", "SGSApi\SGSApi.csproj", "{19D87E93-6746-4EF9-AEB2-EA4EAAE9BC0C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SGSApi.ClientLibrary", "SGSApi.ClientLibrary\SGSApi.ClientLibrary.csproj", "{7D0D600D-C40D-41BF-99BA-055D95A3E226}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -29,6 +33,18 @@ Global
 		{564DE25D-78DB-4462-A83A-1F665E0B7E06}.Release|Any CPU.Build.0 = Release|Any CPU
 		{564DE25D-78DB-4462-A83A-1F665E0B7E06}.Tools|Any CPU.ActiveCfg = Tools|Any CPU
 		{564DE25D-78DB-4462-A83A-1F665E0B7E06}.Tools|Any CPU.Build.0 = Tools|Any CPU
+		{19D87E93-6746-4EF9-AEB2-EA4EAAE9BC0C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{19D87E93-6746-4EF9-AEB2-EA4EAAE9BC0C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{19D87E93-6746-4EF9-AEB2-EA4EAAE9BC0C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{19D87E93-6746-4EF9-AEB2-EA4EAAE9BC0C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{19D87E93-6746-4EF9-AEB2-EA4EAAE9BC0C}.Tools|Any CPU.ActiveCfg = Debug|Any CPU
+		{19D87E93-6746-4EF9-AEB2-EA4EAAE9BC0C}.Tools|Any CPU.Build.0 = Debug|Any CPU
+		{7D0D600D-C40D-41BF-99BA-055D95A3E226}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7D0D600D-C40D-41BF-99BA-055D95A3E226}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7D0D600D-C40D-41BF-99BA-055D95A3E226}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7D0D600D-C40D-41BF-99BA-055D95A3E226}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7D0D600D-C40D-41BF-99BA-055D95A3E226}.Tools|Any CPU.ActiveCfg = Debug|Any CPU
+		{7D0D600D-C40D-41BF-99BA-055D95A3E226}.Tools|Any CPU.Build.0 = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
