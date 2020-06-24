@@ -60,7 +60,7 @@ namespace SGSApi
                     "v1",
                     new OpenApiInfo
                     {
-                        Title = "Retail Manager API",
+                        Title = "Session API",
                         Version = "v1"
                     });
             });
