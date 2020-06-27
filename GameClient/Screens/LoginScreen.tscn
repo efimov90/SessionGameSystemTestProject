@@ -1,0 +1,95 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Screens/LoginScreen.cs" type="Script" id=1]
+
+[node name="LoginScreen" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="LoginMenu" type="GridContainer" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -65.5
+margin_top = -53.0
+margin_right = 65.5
+margin_bottom = 53.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Title" type="Label" parent="LoginMenu"]
+margin_right = 131.0
+margin_bottom = 14.0
+text = "Session Test System"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="LoginLabel" type="Label" parent="LoginMenu"]
+margin_top = 18.0
+margin_right = 131.0
+margin_bottom = 32.0
+text = "Login:"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="LoginEdit" type="LineEdit" parent="LoginMenu"]
+margin_top = 36.0
+margin_right = 131.0
+margin_bottom = 60.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="PasswordLabel" type="Label" parent="LoginMenu"]
+margin_top = 64.0
+margin_right = 131.0
+margin_bottom = 78.0
+size_flags_horizontal = 3
+text = "Password:"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="PasswordLabelContainer" type="GridContainer" parent="LoginMenu"]
+visible = false
+margin_top = 82.0
+margin_right = 131.0
+margin_bottom = 82.0
+columns = 2
+
+[node name="KeyboardLayout" type="PanelContainer" parent="LoginMenu/PasswordLabelContainer"]
+visible = false
+margin_left = 99.0
+margin_right = 131.0
+margin_bottom = 28.0
+
+[node name="KeyboardLayoutLabel" type="Label" parent="LoginMenu/PasswordLabelContainer/KeyboardLayout"]
+margin_left = 7.0
+margin_top = 7.0
+margin_right = 25.0
+margin_bottom = 21.0
+text = "RU"
+align = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="PasswordEdit" type="LineEdit" parent="LoginMenu"]
+margin_top = 82.0
+margin_right = 131.0
+margin_bottom = 106.0
+secret = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="text_entered" from="LoginMenu/LoginEdit" to="." method="_on_LoginEdit_text_entered"]
+[connection signal="text_entered" from="LoginMenu/PasswordEdit" to="." method="_on_PasswordEdit_text_entered"]

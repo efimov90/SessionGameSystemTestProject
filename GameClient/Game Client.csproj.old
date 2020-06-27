@@ -47,24 +47,17 @@
       <PrivateAssets>All</PrivateAssets>
     </PackageReference>
     <Reference Include="GodotSharp">
+      <HintPath>$(ProjectDir)\.mono\assemblies\$(ApiConfiguration)\GodotSharp.dll</HintPath>
       <Private>False</Private>
-      <HintPath>$(ProjectDir)/.mono/assemblies/$(ApiConfiguration)/GodotSharp.dll</HintPath>
     </Reference>
     <Reference Include="GodotSharpEditor" Condition=" '$(Configuration)' == 'Debug' ">
+      <HintPath>$(ProjectDir)\.mono\assemblies\$(ApiConfiguration)\GodotSharpEditor.dll</HintPath>
       <Private>False</Private>
-      <HintPath>$(ProjectDir)/.mono/assemblies/$(ApiConfiguration)/GodotSharpEditor.dll</HintPath>
     </Reference>
     <Reference Include="System" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Screens\LoginScreen.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\SGSApi.ClientLibrary\SGSApi.ClientLibrary.csproj">
-      <Project>{7d0d600d-c40d-41bf-99ba-055d95a3e226}</Project>
-      <Name>SGSApi.ClientLibrary</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>
